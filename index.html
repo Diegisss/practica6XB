@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/codigo.js"></script>
+</head>
+
+<body>
+    <section class="contenedor">
+        <header>
+            <h1>IntroJS</h1>
+        </header>
+        <main>
+            <h1>Bienvenidos a IntroJS</h1>
+            <h2>Caso1: llamado a un script dentro de un archivo html</h2>
+            <script>
+                function sumar() {
+                    let op1 = parseFloat(document.getElementById("op1").value);
+                    let op2 = parseFloat(document.getElementById("op2").value);
+                    let x = document.getElementById("resultado1");
+                    x.innerHTML = op1 + op2;
+                }
+            </script>
+            <label for="op1">Operando1: </label>
+            <input type="text" id="op1" name="op1" />
+            <label for="op2">Operando2: </label>
+            <input type="text" id="op2" name="op2" />
+            <button class="callJS" onclick="sumar()">Sumar</button>
+            <label for="resultado1">Resultado: </label>
+            <output id="resultado1">0</output>
+
+            <h2>Caso2: llamado a un script externo (js/archivo.js) por medio de evento</h2>
+
+            <button class="callJS" onclick="codigoJS()">Presiona para ejecutar</button>
+        </main>
+        <footer>
+            <h3>Creative Commons 4.0 2026</h3>
+        </footer>
+    </section>
+</body>
+
+</html>
