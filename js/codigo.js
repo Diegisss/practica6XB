@@ -2,6 +2,14 @@ let sexo = ""; /*esto lo hice para que cuando le demos click a las bolitas, auto
     se guarde el valor en esta variable, un ingenio que se me ocurrio */
 function codigoJS() 
 {
+    let nombre_alumno = "Diego Jaimes Escobar";
+    let numero_control = "24090897";
+    let nom = document.getElementById('datos');
+    let num = document.getElementById('datos1');
+    nom.innerHTML= nombre_alumno;
+    num.innerHTML= numero_control;
+
+
     let MB = 0, caloriasDiariasTotales= 0 ;
     let edad = document.getElementById("edad").value;
     let peso = document.getElementById("peso").value;
