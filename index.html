@@ -28,14 +28,25 @@
                     let x = document.getElementById("resultado1");
                     x.innerHTML = op1 + op2;
                 }
+                function restar(){
+                    let op1 = parseFloat(document.getElementById("op1").value);
+                    let op2 = parseFloat(document.getElementById("op2").value);
+                    let x = document.getElementById("resultado1");
+                    x.innerHTML=op1-op2;
+                }
+                
+                
             </script>
             <label for="op1">Operando1: </label>
             <input type="text" id="op1" name="op1" />
             <label for="op2">Operando2: </label>
             <input type="text" id="op2" name="op2" />
-            <button class="callJS" onclick="sumar()">Sumar</button>
             <label for="resultado1">Resultado: </label>
             <output id="resultado1">0</output>
+            <br>
+            <button class="callJS" onclick="sumar()">Sumar</button>
+            <button class="callJS" onclick="restar()">Restar</button>
+            
 
             <h2>Caso2: llamado a un script externo (js/archivo.js) por medio de evento</h2>
 
