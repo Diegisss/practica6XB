@@ -25,24 +25,28 @@
                 function sumar() {
                     let op1 = parseFloat(document.getElementById("op1").value);
                     let op2 = parseFloat(document.getElementById("op2").value);
+                    if (isNaN(op1) || isNaN(op2)) return alert("NO PUEDES DEJAR LOS CAMPOS VACIOS");
                     let x = document.getElementById("resultado1");
                     x.innerHTML = op1 + op2;
                 }
                 function restar(){
                     let op1 = parseFloat(document.getElementById("op1").value);
                     let op2 = parseFloat(document.getElementById("op2").value);
+                    if (isNaN(op1) || isNaN(op2)) return alert("NO PUEDES DEJAR LOS CAMPOS VACIOS");
                     let x = document.getElementById("resultado1");
                     x.innerHTML=op1-op2;
                 }
                 function multiplicar(){
                     let op1 = parseFloat(document.getElementById("op1").value);
                     let op2 = parseFloat(document.getElementById("op2").value);
+                    if (isNaN(op1) || isNaN(op2)) return alert("NO PUEDES DEJAR LOS CAMPOS VACIOS");
                     let x = document.getElementById("resultado1");
                     x.innerHTML=op1*op2;
                 }
                 function dividir(){
                     let op1 = parseFloat(document.getElementById("op1").value);
                     let op2 = parseFloat(document.getElementById("op2").value);
+                    if (isNaN(op1) || isNaN(op2)) return alert("NO PUEDES DEJAR LOS CAMPOS VACIOS");
                     let x = document.getElementById("resultado1");
                     x.innerHTML=(op1/op2).toFixed(4);
                 }
