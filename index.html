@@ -40,7 +40,12 @@
                     let x = document.getElementById("resultado1");
                     x.innerHTML=op1*op2;
                 }
-                
+                function dividir(){
+                    let op1 = parseFloat(document.getElementById("op1").value);
+                    let op2 = parseFloat(document.getElementById("op2").value);
+                    let x = document.getElementById("resultado1");
+                    x.innerHTML=(op1/op2).toFixed(4);
+                }
                 
             </script>
             <label for="op1">Operando1: </label>
@@ -53,11 +58,9 @@
             <button class="callJS" onclick="sumar()">Sumar</button>
             <button class="callJS" onclick="restar()">Restar</button>
             <button class="callJS" onclick="multiplicar()">Multiplicar</button>
-            
+            <button class="callJS" onclick="dividir()">Dividir</button>
 
             <h2>Caso2: llamado a un script externo (js/archivo.js) por medio de evento</h2>
-
-            
             
 
             <button class="callJS" onclick="codigoJS()">Presiona para ejecutar</button>
